@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;500&display=swap');
+:root{
+  --titles-color: #060C4D;
+  --footer-and-header-color: #1A237E;
+  --buttons-color: #304FFE;
+  --inputs-background-color: #E8EAF6;
+  --input-border-color: #5C6BC0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+label{
+  display: block;
+  font-size: 1.12rem;
+}
+input{
+  background-color: var(--inputs-background-color);
+  border: var(--input-border-color) 1px solid;
+  border-radius: 5px;
+  padding: 0.82rem 0.5rem;
+}
+.button{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  background-color: var(--buttons-color);
+  color: var(--inputs-background-color);
+  border-radius: 5px;
+  height: 48px;
+  border: none;
+}

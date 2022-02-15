@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76.605" height="28" viewBox="0 0 76.605 28">
+  <g id="Logo" transform="translate(83.85 6.422)">
+    <path id="Caminho_6" data-name="Caminho 6" d="M6.339,7.924A1.585,1.585,0,1,1,7.924,6.339,1.589,1.589,0,0,1,6.339,7.924ZM11.093,6.5A4.718,4.718,0,0,0,6.339,1.585,4.827,4.827,0,0,0,2.9,3.036,4.813,4.813,0,0,0,1.585,6.5c0,1.854,1.545,4.31,4.754,7.242C9.548,10.808,11.093,8.351,11.093,6.5ZM6.339,0a6.3,6.3,0,0,1,6.339,6.5q0,3.946-6.339,9.35Q0,10.439,0,6.5A6.3,6.3,0,0,1,6.339,0Z" transform="translate(-19.158 -1.65) rotate(20)" fill="red"/>
+    <path id="Caminho_2" data-name="Caminho 2" d="M11.326,9.967H10.61l-.254-.245a5.9,5.9,0,1,0-.634.634l.245.254v.716L10,11.4l.39.4.614.542,1.866,1.651,1.37-1.335Zm-5.436,0A4.077,4.077,0,1,1,9.967,5.889,4.072,4.072,0,0,1,5.889,9.967Z" transform="translate(-25.457 -2.351) rotate(22)" fill="#fff"/>
+    <circle id="Elipse_1" data-name="Elipse 1" cx="1.585" cy="1.585" r="1.585" transform="translate(-16.753 4.621)" fill="red"/>
+    <text id="BCEP" transform="translate(-83.85 14.578)" fill="#fff" font-size="20" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">BCEP</tspan></text>
+  </g>
+</svg>

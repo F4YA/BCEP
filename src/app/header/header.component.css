@@ -1,0 +1,27 @@
+header{
+  width: 100vw;
+  height: 60px;
+  background-color: var(--footer-and-header-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img{
+  height: 28px;
+  width: 76px;
+  display: inline-block;
+  grid-column: 2;
+}
+i{
+  color: var(--inputs-background-color);
+  font-size: 2rem;
+  justify-self: end;
+  margin-right: 20px;
+}
+nav{
+  display: none;
+  width: 100vw;
+}
