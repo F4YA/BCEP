@@ -2,13 +2,14 @@ header{
   width: 100vw;
   height: 60px;
   background-color: var(--footer-and-header-color);
+}
+div{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  flex-direction: column;
+  height: inherit;
 }
-
 img{
   height: 28px;
   width: 76px;
@@ -22,6 +23,29 @@ i{
   margin-right: 20px;
 }
 nav{
-  display: none;
+  position: absolute;
   width: 100vw;
+  top: 60px;
+}
+ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+li{
+  width: 100vw;
+  height: 48px;
+  background-color: var(--titles-color);
+  border-bottom: var(--buttons-color) 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li:nth-child(2){
+  display: none;
+}
+a{
+  color: var(--inputs-background-color);
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
 }

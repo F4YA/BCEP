@@ -1,7 +1,9 @@
 <header>
-  <img src="../../assets/img/Logo-mobile.svg" alt="logo">
-  <i class="bi bi-list"></i>
-  <nav>
+  <div>
+    <img src="../../assets/img/Logo-mobile.svg" alt="logo">
+    <i class="bi bi-list" (click)="showMenu()"></i>
+  </div>
+  <nav *ngIf="menuIsActived">
     <ul>
       <li><a href="">Sobre</a></li>
       <li><span>|</span></li>
