@@ -1,7 +1,8 @@
 <div class="container">
   <h1>Busca CEP</h1>
   <div class="search-container">
-    <input type="text" name="cep" class="cep" placeholder="CEP">
+    <input type="text" name="cep" class="cep" placeholder="CEP" (keypress)="ValidCepField()" id="cepField" maxlength="9" pattern="[0-9]{5}">
+    <label class="mensagem" *ngIf="IsInvalid">CEP Invalido</label>
     <button type="button" value="" class="button button-search"><i class="bi bi-search"></i></button>
   </div>
   <div>

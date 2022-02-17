@@ -20,6 +20,7 @@ h1{
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  position: relative;
 }
 
 input{
@@ -28,10 +29,22 @@ input{
   padding: 0px 0.5rem;
 }
 
+input:focus{
+  border: red 1px solid;
+}
+
 .cep{
   width: 244px;
 }
 
 .copy{
   padding: 0px 2rem;
+}
+
+.mensagem{
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -18px;
+  left: 0px;
+  color: #FF8000;
 }

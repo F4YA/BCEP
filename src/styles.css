@@ -31,6 +31,9 @@ input{
   border-radius: 5px;
   padding: 0.82rem 0.5rem;
 }
+input:focus{
+  border-color: #060C4D;
+}
 .button{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
