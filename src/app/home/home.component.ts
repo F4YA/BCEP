@@ -16,20 +16,23 @@ export class HomeComponent implements OnInit {
 
   public ValidCepField() {
     this.cepField = document.getElementById('cepField') as HTMLInputElement;
-    this.cepField.value = this.cepField.value.replace(/(\d{5})(\d{3})/, function(regex, a, b) {
-      return a+'-'+b;
-    })
+    this.replaceField(this.cepField);
     if (!this._regex.test(this.cepField.value)) {
       this.IsInvalid = true;
-      this.cepField.style.borderColor = "#FF8000";
+      this.cepField.style.outlineColor = '#FF8000';
     } else {
       this.IsInvalid = false;
-      this.cepField.style.borderColor = "#5C6BC0";
+      this.cepField.style.outlineColor = '#24BE2E';
     }
   }
 
-  public ShowNotification(argument: boolean) {
-
+  public maskField(){
+    this.cepField = document.getElementById('cepField') as HTMLInputElement;
+    if(this.cepField.value.length == 5)
+      this.cepField.value += '-';
   }
 
+  private replaceField(field: HTMLInputElement){
+    field.value = field.value.replace(/[^0-9-]/g, '');
+  }
 }
