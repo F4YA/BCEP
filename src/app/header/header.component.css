@@ -26,6 +26,7 @@ nav{
   position: absolute;
   width: 100vw;
   top: 60px;
+  z-index: 3;
 }
 ul{
   list-style: none;
