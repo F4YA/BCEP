@@ -20,9 +20,11 @@ export class HomeComponent implements OnInit {
     if (!this._regex.test(this.cepField.value)) {
       this.IsInvalid = true;
       this.cepField.style.outlineColor = '#FF8000';
+      this.cepField.style.borderColor = '#FF8000';
     } else {
       this.IsInvalid = false;
       this.cepField.style.outlineColor = '#24BE2E';
+      this.cepField.style.borderColor = '#5C6BC0';
     }
   }
 

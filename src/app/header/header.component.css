@@ -42,11 +42,48 @@ li{
   justify-content: center;
   align-items: center;
 }
-li:nth-child(2){
-  display: none;
-}
 a{
   color: var(--inputs-background-color);
   font-size: 1.4rem;
   font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 768px){
+  i{
+    display: none;
+  }
+  nav{
+    top: 0px;
+    position: relative;
+    margin-right:20px;
+    width: 20vw;
+  }
+  li{
+    background-color: transparent;
+    border: none;
+  }
+  li:nth-child(1)::after{
+    content: "";
+    display: inline-block;
+    background-color: aliceblue;
+    height: 28px;
+    width: 2px;
+    margin-left: 20px;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  div{
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+  }
 }
