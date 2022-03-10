@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public IsInvalid: boolean | undefined;
+  public hasMoreThan768px: boolean | undefined;
   public _regex: RegExp = new RegExp('([0-9]{5})-([0-9]{3})', 'g');
   public cepField: HTMLInputElement | undefined;
 
   ngOnInit(): void {
     this.IsInvalid = false;
+    this.hasMoreThan768px = window.innerWidth >= 768;
   }
 
   public ValidCepField() {
@@ -37,4 +39,9 @@ export class HomeComponent implements OnInit {
   private replaceField(field: HTMLInputElement){
     field.value = field.value.replace(/[^0-9-]/g, '');
   }
+
+  @HostListener('window:resize',['$event'])
+    public resize(){
+      this.hasMoreThan768px = window.innerWidth >= 768;
+    }
 }

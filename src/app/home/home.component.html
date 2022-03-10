@@ -9,19 +9,24 @@
   </div>
   <div>
     <label for="maps">Maps</label>
-    <input type="text" name="maps" readonly>
+    <div class="inputMapsContainer">
+      <input type="text" name="maps" readonly class="input-maps">
+      <button *ngIf="hasMoreThan768px" class="button button-copy"><i class="bi bi-files icon"></i></button>
+    </div>
   </div>
   <div>
     <label for="maps">Logradouro/nome</label>
-    <input type="text" name="maps" readonly>
+    <input type="text" name="maps" class="input-logradouro" readonly>
   </div>
-  <div>
-    <label for="maps">Bairro/Distrito</label>
-    <input type="text" name="maps" readonly>
-  </div>
-  <div>
-    <label for="maps">Localidade/UF</label>
-    <input type="text" name="maps" readonly>
+  <div class="bairro-localidade-container">
+    <div>
+      <label for="maps">Bairro/Distrito</label>
+      <input type="text" name="maps" readonly>
+    </div>
+    <div>
+      <label for="maps">Localidade/UF</label>
+      <input type="text" name="maps" readonly>
+    </div>
   </div>
   <button class="button copy">Copiar Conteúdo</button>
 </div>

@@ -9,7 +9,7 @@
   width: 48px;
 }
 
-.button-search > i{
+.button-search > i, .button-copy i{
   font-size: 1.5rem;
 }
 h1{
@@ -45,4 +45,46 @@ input{
   color: #FF8000;
   margin-block-start: 0px;
   margin-block-end: 0px;
+}
+
+@media (min-width: 768px){
+  .search-container{
+    gap: 2rem;
+  }
+  .button-search{
+    width: 168px;
+  }
+  .cep{
+    width: 17rem;
+  }
+
+  .inputMapsContainer{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .input-maps{
+    width: 400px;
+  }
+
+  .button-copy{
+    width: 100px;
+  }
+
+  .input-logradouro{
+    width: 532px;
+  }
+
+  .bairro-localidade-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .bairro-localidade-container > div > input{
+    width: 242px;
+  }
+
+  .copy{
+    width: 250px;
+  }
 }
