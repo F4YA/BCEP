@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { CepService } from './cep/cep.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    CepService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
